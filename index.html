@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Engaging and interactive educational games for learning. Support for both students and educators. Discover Outreach Games. ">
+  <meta name="author" content="Alex Zimmerman, Outreach Games">
+  <meta name="generator" content="Outreach Games | Engaging Educational Games for Learning">
+  <title>Outreach Games</title>
+
+  <meta name="keywords" content="outreach, games, education, students, engaging, learning">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"
+  >
+
+  <!--Custom Effects-->
+  <script src="common_files/theme_switch.js"></script>
+  <link rel="stylesheet" type="text/css" href="common_files/custom.css">
+
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T2FG4JT50E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T2FG4JT50E');
+</script>
+
+<body>
+
+  <!--Icons-->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="arrow-right-short" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+    </symbol>
+    <symbol id="book-half" viewBox="0 0 16 16">
+      <path
+        d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+    </symbol>
+    <symbol id="box-seam" viewBox="0 0 16 16">
+      <path
+        d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z" />
+    </symbol>
+    <symbol id="braces" viewBox="0 0 16 16">
+      <path
+        d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6zM13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6z" />
+    </symbol>
+    <symbol id="braces-asterisk" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M1.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C2.25 2 1.49 2.759 1.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6ZM14.886 7.9v.164c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456v-1.3c-1.114 0-1.49-.362-1.49-1.456V4.352C14.51 2.759 13.75 2 12.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6ZM7.5 11.5V9.207l-1.621 1.621-.707-.707L6.792 8.5H4.5v-1h2.293L5.172 5.879l.707-.707L7.5 6.792V4.5h1v2.293l1.621-1.621.707.707L9.208 7.5H11.5v1H9.207l1.621 1.621-.707.707L8.5 9.208V11.5h-1Z" />
+    </symbol>
+    <symbol id="check2" viewBox="0 0 16 16">
+      <path
+        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+    </symbol>
+    <symbol id="chevron-right" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+      </path>
+    </symbol>
+    <symbol id="chevron-expand" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M3.646 9.146a.5.5 0 0 1 .708 0L8 12.793l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708zm0-2.292a.5.5 0 0 0 .708 0L8 3.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708z" />
+    </symbol>
+    <symbol id="circle-half" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+    </symbol>
+    <symbol id="clipboard" viewBox="0 0 16 16">
+      <path
+        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+      <path
+        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+    </symbol>
+    <symbol id="code" viewBox="0 0 16 16">
+      <path
+        d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z" />
+    </symbol>
+    <symbol id="file-earmark-richtext" viewBox="0 0 16 16">
+      <path
+        d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z" />
+      <path
+        d="M4.5 12.5A.5.5 0 0 1 5 12h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm0-2A.5.5 0 0 1 5 10h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm1.639-3.708 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047l1.888.974V8.5a.5.5 0 0 1-.5.5H5a.5.5 0 0 1-.5-.5V8s1.54-1.274 1.639-1.208zM6.25 6a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5z" />
+    </symbol>
+    <symbol id="globe2" viewBox="0 0 16 16">
+      <path
+        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z" />
+    </symbol>
+    <symbol id="grid-fill" viewBox="0 0 16 16">
+      <path
+        d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z" />
+    </symbol>
+    <symbol id="lightning-charge-fill" viewBox="0 0 16 16">
+      <path
+        d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z" />
+    </symbol>
+    <symbol id="list" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+    </symbol>
+    <symbol id="magic" viewBox="0 0 16 16">
+      <path
+        d="M9.5 2.672a.5.5 0 1 0 1 0V.843a.5.5 0 0 0-1 0v1.829Zm4.5.035A.5.5 0 0 0 13.293 2L12 3.293a.5.5 0 1 0 .707.707L14 2.707ZM7.293 4A.5.5 0 1 0 8 3.293L6.707 2A.5.5 0 0 0 6 2.707L7.293 4Zm-.621 2.5a.5.5 0 1 0 0-1H4.843a.5.5 0 1 0 0 1h1.829Zm8.485 0a.5.5 0 1 0 0-1h-1.829a.5.5 0 0 0 0 1h1.829ZM13.293 10A.5.5 0 1 0 14 9.293L12.707 8a.5.5 0 1 0-.707.707L13.293 10ZM9.5 11.157a.5.5 0 0 0 1 0V9.328a.5.5 0 0 0-1 0v1.829Zm1.854-5.097a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L8.646 5.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0l1.293-1.293Zm-3 3a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L.646 13.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0L8.354 9.06Z" />
+    </symbol>
+    <symbol id="menu-button-wide-fill" viewBox="0 0 16 16">
+      <path
+        d="M1.5 0A1.5 1.5 0 0 0 0 1.5v2A1.5 1.5 0 0 0 1.5 5h13A1.5 1.5 0 0 0 16 3.5v-2A1.5 1.5 0 0 0 14.5 0h-13zm1 2h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1zm9.927.427A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0l-.396-.396zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
+    </symbol>
+    <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+      <path
+        d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+      <path
+        d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+    </symbol>
+    <symbol id="palette2" viewBox="0 0 16 16">
+      <path
+        d="M0 .5A.5.5 0 0 1 .5 0h5a.5.5 0 0 1 .5.5v5.277l4.147-4.131a.5.5 0 0 1 .707 0l3.535 3.536a.5.5 0 0 1 0 .708L10.261 10H15.5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5H3a2.99 2.99 0 0 1-2.121-.879A2.99 2.99 0 0 1 0 13.044m6-.21 7.328-7.3-2.829-2.828L6 7.188v5.647zM4.5 13a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0zM15 15v-4H9.258l-4.015 4H15zM0 .5v12.495V.5z" />
+      <path d="M0 12.995V13a3.07 3.07 0 0 0 0-.005z" />
+    </symbol>
+    <symbol id="plugin" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M1 8a7 7 0 1 1 2.898 5.673c-.167-.121-.216-.406-.002-.62l1.8-1.8a3.5 3.5 0 0 0 4.572-.328l1.414-1.415a.5.5 0 0 0 0-.707l-.707-.707 1.559-1.563a.5.5 0 1 0-.708-.706l-1.559 1.562-1.414-1.414 1.56-1.562a.5.5 0 1 0-.707-.706l-1.56 1.56-.707-.706a.5.5 0 0 0-.707 0L5.318 5.975a3.5 3.5 0 0 0-.328 4.571l-1.8 1.8c-.58.58-.62 1.6.121 2.137A8 8 0 1 0 0 8a.5.5 0 0 0 1 0Z" />
+    </symbol>
+    <symbol id="plus" viewBox="0 0 16 16">
+      <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+    </symbol>
+    <symbol id="sun-fill" viewBox="0 0 16 16">
+      <path
+        d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+    </symbol>
+    <symbol id="three-dots" viewBox="0 0 16 16">
+      <path
+        d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+    </symbol>
+    <symbol id="tools" viewBox="0 0 16 16">
+      <path
+        d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z" />
+    </symbol>
+    <symbol id="ui-radios" viewBox="0 0 16 16">
+      <path
+        d="M7 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zM0 12a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm7-1.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zm0-5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zM3 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+    </symbol>
+    <symbol id="facebook" viewBox="0 0 16 16">
+      <path
+        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+      </path>
+    </symbol>
+    <symbol id="instagram" viewBox="0 0 16 16">
+      <path
+        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+      </path>
+    </symbol>
+    <symbol id="twitter" viewBox="0 0 16 16">
+      <path
+        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z">
+      </path>
+    </symbol>
+    <symbol id="email" viewBox="0 0 24 24">
+      <path
+        d="M12 2.02c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 12.55l-5.992-4.57h11.983l-5.991 4.57zm0 1.288l-6-4.629v6.771h12v-6.771l-6 4.629z">
+      </path>
+    </symbol>
+    <symbol id="linkedin" viewBox="0 0 16 16">
+      <path
+        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+    </symbol>
+    <symbol id="discord" viewBox="0 0 16 16">
+      <path
+        d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z">
+    </symbol>
+  </svg>
+
+  <!--Header/Nav Bar-->
+  <header class="navbar navbar-expand-lg bd-navbar bg-body-tertiary sticky-top">
+    <nav class="container-fluid" aria-label="Main navigation">
+      <a class="navbar-brand" href="#">
+        <img src="common_files/Asset_logo.png" alt="Logo" width="32" height="32">
+        Outreach Games
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarScroll">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#section-about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-our_design">Our Design</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-example">In Action</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-contact">Contact</a>
+          </li>
+          <!--Theme selector-->
+          <li class="nav-item dropdown">
+            <button class="btn btn-link nav-link dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+              aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static">
+              <svg class="bi my-1 theme-icon-active" width="16" height="16" fill="#808080">
+                <use href="#circle-half"></use>
+              </svg>
+              <span class="d-lg-inline-flex ms-2">Theme</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme"
+              style="--bs-dropdown-min-width: 2rem;">
+              <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light">
+                  <svg class="bi me-2 opacity-50 theme-icon" width="16" height="16" fill="#808080">
+                    <use href="#sun-fill"></use>
+                  </svg>
+                  Light
+                  <svg class="bi ms-auto d-none">
+                    <use href="#check2"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark">
+                  <svg class="bi me-2 opacity-50 theme-icon" width="16" height="16" fill="#808080">
+                    <use href="#moon-stars-fill"></use>
+                  </svg>
+                  Dark
+                  <svg class="bi ms-auto d-none">
+                    <use href="#check2"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto">
+                  <svg class="bi me-2 opacity-50 theme-icon" width="16" height="16" fill="#2B3990">
+                    <use href="#circle-half"></use>
+                  </svg>
+                  Auto
+                  <svg class="bi ms-auto d-none">
+                    <use href="#check2"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!--Hero (Title)-->
+  <div class="px-4 pt-5 text-center">
+    <h1 class="display-2 fw-bold">Outreach Games</h1>
+    <div class="col-lg-6 mx-auto">
+      <h3 class="text-muted mt-3 fw-light">
+        Understanding science and community through game-based learning
+      </h3>
+    </div>
+  </div>
+
+  <!--Call to Action (About)-->
+  <div class="container px-4 py-1 mt-4 border-top border-bottom border-2" id="section-about">
+    <div class="row flex-lg-row align-items-center g-5 py-5">
+      <div class="col-lg-6">
+        <h1 class="h1">Engaging for students.</h1>
+        <h1 class="h1 text-muted mb-3">Augmented for educators.</h1>
+        <p class="lead">
+          At Outreach Games, we specialize in creating 
+          effective and engaging learning activities through digital games.
+        </p>
+        <p class="lead">
+          Our game-based approach promotes active learning.
+          Students work toward a goal by evaluating and choosing actions, 
+          then experience the outcomes of those actions with adaptive guidance in real-time. 
+        </p>
+        <p class="lead">
+          We build our games to not only be engaging and instructive for students, 
+          but also to provide a time-saving and robust lesson framework for educators.  
+        </p>
+      </div>
+      <div class="col-10 col-sm-8 col-lg-6">
+        <div class="hovereffect">
+          <img class="img-responsive d-block mx-lg-auto img-fluid border rounded shadow"
+            src="custom_web_files/design_example.png" alt="OA Screenshot" loading="lazy">
+          <div class="overlay">
+            <p class="h3">Example of Component Design</p>
+            <p class="p d-none d-md-block">
+              This flowchart shows one internal aspect of how 
+              our games are built to actively engage students as self-directed learners.
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Content (Our Design)-->
+  <div class="container px-4 py-5 border-bottom border-2" id="section-our_design">
+    <h1 class="h1 pb-2">Our Design Principles</h1>
+    <div class="row g-4 py-3 row-cols-1 row-cols-lg-3">
+      <!--Interactive and Engaging-->
+      <div class="feature col">
+        <div class="h-100 p-4 border rounded-3 bg-body-secondary border-2 shadow">
+          <h3 class="h3 pb-2 border-bottom bg-body-secondary">Interactive and Engaging</h3>
+          <p>
+            We design learning experiences where students can explore and 
+            evaluate content iteratively and interactively. 
+            This allows students to analyze and alter their decisions and 
+            interpret how systems and communities change according to their decisions in real-time.
+          </p>
+        </div>
+      </div>
+      <!--Self-Directed Learning-->
+      <div class="feature col">
+        <div class="h-100 p-4 border rounded-3 bg-body-secondary border-2 shadow">
+          <h3 class="h3 pb-2 border-bottom">Self-Directed Learning</h3>
+          <p>
+            We engineer game play to engage students in increasingly 
+            sophisticated modes of understanding, from knowledge and comprehension 
+            all the way to synthesis and evaluation. As students play though this 
+            scaffold, they gain a progressively larger influence on the game system and 
+            are fostered as self-directed learners.
+          </p>
+        </div>
+      </div>
+      <!--Easy to Use-->
+      <div class="feature col">
+        <div class="h-100 p-4 border rounded-3 bg-body-secondary border-2 shadow">
+          <h3 class="h3 pb-2 border-bottom">Easy to Use</h3>
+          <p>
+            Our games help guide students to learn in an easy-to-understand and encouraging way. 
+            There is no complex setup or manuals needed to use our programs, 
+            just click the online play button, and go!  
+          </p>
+        </div>
+      </div>
+      <!--Lesson Plan Ready-->
+      <div class="feature col">
+        <div class="h-100 p-4 border rounded-3 bg-body-secondary border-2 shadow">
+          <h3 class="h3 pb-2 border-bottom">Lesson Plan Ready</h3>
+          <p>
+            Our games are built to save educators' valuable time. 
+            In addition to the game itself, we also develop and 
+            supply structured lesson plans, alignment with requested standards, 
+            and examples of module integration.
+          </p>
+        </div>
+      </div>
+      <!--Accessibility-->
+      <div class="feature col">
+        <div class="h-100 p-4 border rounded-3 bg-body-secondary border-2 shadow">
+          <h3 class="h3 pb-2 border-bottom">Accessibility</h3>
+          <p>
+            We meticulously optimize our games to be responsive and user friendly, 
+            which allows anyone with an internet connection to use them. 
+            We also provide standalone applications of our web games for PC, Mac, and Linux, 
+            so the programs can be physically installed even on systems without internet. 
+          </p>
+        </div>
+      </div>
+      <!--Customizable-->
+      <div class="feature col">
+        <div class="h-100 p-4 border rounded-3 bg-body-secondary border-2 shadow">
+          <h3 class="h3 pb-2 border-bottom">Customizable</h3>
+          <p>
+            At Outreach Games, we build tools to fit educator needs. 
+            This includes collaborative input, live demonstrations in the classroom, 
+            and providing data-driven analytics to personalize the learning experience of each student.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Content (In Action Example)-->
+  <div class="container px-4 py-3 border-bottom border-2" id="section-example">
+    <div class="row flex-lg-row align-items-center g-5 py-5">
+      <div class="col-lg-6">
+        <h1 class="h1">Outreach Games In Action</h1>
+        <p class="lead">
+          Our digital programs provide effective and easy-to-use 
+          tools to deploy in classrooms, museums, and other community organizations. 
+          The virtual aspect keeps overhead costs extremely low while 
+          also increasing the potential for wide-reaching accessibility, scaling, and usage. 
+        </p>
+        <h1 class="h2 text-muted mb-3">What to see an example?</h1>
+        <p class="lead">
+          Check out Ocean Protector, a game that 
+          teach students about ocean acidification and ways to prevent it. 
+          The federal agency NOAA funded the development of Ocean Protector, 
+          which allows anyone to use it for educational purposes! 
+        </p>
+        <p class="lead">
+          The decision-driven experience of Ocean Protector helps students construct explanations,
+          reason effectively, and become self-directed learners involving marine science and ocean literacy.
+        </p>
+        <div class="d-grid d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-primary btn-lg px-4 mt-3 shadow">
+            <a class="nav-link" href="OceanProtector/main.html">Go to Ocean Protector Page</a>
+          </button>
+        </div>
+      </div>
+      <div class="col-10 col-sm-8 col-lg-6">
+        <div class="hovereffect">
+          <img class="img-responsive d-block mx-lg-auto img-fluid border rounded shadow"
+            src="OceanProtector/custom_web_files/screenshot_1.png" alt="OA Screenshot" loading="lazy">
+          <div class="overlay">
+            <p class="h3">Screenshot from Ocean Protector</p>
+            <p class="p d-none d-md-block">This game screenshot is showing a zoomed in view of a healthy tuna school. 
+              Through the game, students will explore how these fish and other marine life 
+              are impacted by ocean acidification as they make analytical decisions and 
+              evaluate the outcomes to their choices in real-time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--End (Contact)-->
+  <div class="container px-4 py-0 mt-3" id="section-contact">
+    <h1 class="h1 pb-2">Contact Us</h1>
+    <p></p>
+    <p class="lead">Questions or inquiries about Outreach Games? We would love to hear from you!</p>
+  </div>
+
+  <!--Footer-->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+      <div class="col-md-4 d-flex align-items-center">
+        <a class="text-muted" href="mailto:outreachgames.org@gmail.com">
+          <svg class="bi" width="34" height="34" fill="#808080">
+            <use xlink:href="#email"></use>
+          </svg>
+        </a>
+        <a class="d-lg-inline-flex ms-2" href="mailto:outreachgames.org@gmail.com">
+          outreachgames.org@gmail.com
+        </a>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3">
+          <a class="text-muted" href="https://discord.gg/wC9yCebBdR">
+            <svg class="bi" width="26" height="26" fill="#808080">
+              <use xlink:href="#discord"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="text-muted" href="https://twitter.com/outreach_games">
+            <svg class="bi" width="26" height="26" fill="#808080">
+              <use xlink:href="#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="text-muted" href="https://www.instagram.com/outreachgames/">
+            <svg class="bi" width="26" height="26" fill="#808080">
+              <use xlink:href="#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="text-muted" href="https://www.facebook.com/outreachgames/">
+            <svg class="bi" width="26" height="26" fill="#808080">
+              <use xlink:href="#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="text-muted" href="https://www.linkedin.com/company/outreachgames">
+            <svg class="bi" width="26" height="26" fill="#808080">
+              <use xlink:href="#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+    crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>
